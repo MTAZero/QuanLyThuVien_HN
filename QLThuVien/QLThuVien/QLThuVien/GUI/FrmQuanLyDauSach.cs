@@ -170,7 +170,7 @@ namespace QLThuVien.GUI
 
             try
             {
-
+                int k = Int32.Parse(txtSoLuong.Text);
             }
             catch
             {

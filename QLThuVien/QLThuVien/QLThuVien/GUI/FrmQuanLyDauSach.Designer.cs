@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -37,6 +37,8 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.groupThongTin = new System.Windows.Forms.GroupBox();
+            this.txtSoLuong = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtTacGia = new System.Windows.Forms.TextBox();
             this.txtNXB = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,14 +51,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvSACH = new System.Windows.Forms.DataGridView();
+            this.panelTimKiem = new System.Windows.Forms.Panel();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenMH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonViTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panelTimKiem = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtSoLuong = new System.Windows.Forms.TextBox();
+            this.TenSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TacGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NXB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupThongTin.SuspendLayout();
@@ -175,13 +176,30 @@
             this.groupThongTin.TabStop = false;
             this.groupThongTin.Text = "Thông tin chi tiết đầu sách";
             // 
+            // txtSoLuong
+            // 
+            this.txtSoLuong.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoLuong.Location = new System.Drawing.Point(109, 226);
+            this.txtSoLuong.Name = "txtSoLuong";
+            this.txtSoLuong.Size = new System.Drawing.Size(108, 23);
+            this.txtSoLuong.TabIndex = 5;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 229);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(70, 16);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Số lượng : ";
+            // 
             // txtTacGia
             // 
             this.txtTacGia.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTacGia.Location = new System.Drawing.Point(109, 132);
             this.txtTacGia.Name = "txtTacGia";
             this.txtTacGia.Size = new System.Drawing.Size(205, 23);
-            this.txtTacGia.TabIndex = 14;
+            this.txtTacGia.TabIndex = 3;
             // 
             // txtNXB
             // 
@@ -189,7 +207,7 @@
             this.txtNXB.Location = new System.Drawing.Point(109, 179);
             this.txtNXB.Name = "txtNXB";
             this.txtNXB.Size = new System.Drawing.Size(251, 23);
-            this.txtNXB.TabIndex = 13;
+            this.txtNXB.TabIndex = 4;
             // 
             // label3
             // 
@@ -215,7 +233,7 @@
             this.txtTenSach.Location = new System.Drawing.Point(109, 85);
             this.txtTenSach.Name = "txtTenSach";
             this.txtTenSach.Size = new System.Drawing.Size(251, 23);
-            this.txtTenSach.TabIndex = 3;
+            this.txtTenSach.TabIndex = 2;
             // 
             // txtMaSach
             // 
@@ -223,7 +241,7 @@
             this.txtMaSach.Location = new System.Drawing.Point(109, 38);
             this.txtMaSach.Name = "txtMaSach";
             this.txtMaSach.Size = new System.Drawing.Size(205, 23);
-            this.txtMaSach.TabIndex = 2;
+            this.txtMaSach.TabIndex = 1;
             // 
             // label12
             // 
@@ -286,9 +304,10 @@
             this.dgvSACH.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.STT,
-            this.TenMH,
-            this.DonViTinh,
-            this.GhiChu});
+            this.TenSach,
+            this.TacGia,
+            this.NXB,
+            this.SoLuong});
             this.dgvSACH.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvSACH.EnableHeadersVisualStyles = false;
             this.dgvSACH.GridColor = System.Drawing.Color.Black;
@@ -298,14 +317,26 @@
             this.dgvSACH.ReadOnly = true;
             this.dgvSACH.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgvSACH.RowHeadersWidth = 25;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvSACH.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvSACH.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvSACH.RowTemplate.Height = 30;
             this.dgvSACH.RowTemplate.ReadOnly = true;
             this.dgvSACH.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSACH.Size = new System.Drawing.Size(744, 621);
             this.dgvSACH.TabIndex = 3;
             this.dgvSACH.SelectionChanged += new System.EventHandler(this.dgvNhanVien_SelectionChanged);
+            // 
+            // panelTimKiem
+            // 
+            this.panelTimKiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelTimKiem.Controls.Add(this.btnTimKiem);
+            this.panelTimKiem.Controls.Add(this.txtTimKiem);
+            this.panelTimKiem.Controls.Add(this.label1);
+            this.panelTimKiem.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTimKiem.Location = new System.Drawing.Point(0, 0);
+            this.panelTimKiem.Name = "panelTimKiem";
+            this.panelTimKiem.Size = new System.Drawing.Size(1134, 54);
+            this.panelTimKiem.TabIndex = 0;
             // 
             // ID
             // 
@@ -323,58 +354,37 @@
             this.STT.Name = "STT";
             this.STT.ReadOnly = true;
             // 
-            // TenMH
+            // TenSach
             // 
-            this.TenMH.DataPropertyName = "TenMH";
-            this.TenMH.FillWeight = 30F;
-            this.TenMH.HeaderText = "Tên mặt hàng";
-            this.TenMH.Name = "TenMH";
-            this.TenMH.ReadOnly = true;
+            this.TenSach.DataPropertyName = "TenSach";
+            this.TenSach.FillWeight = 30F;
+            this.TenSach.HeaderText = "Tên sách";
+            this.TenSach.Name = "TenSach";
+            this.TenSach.ReadOnly = true;
             // 
-            // DonViTinh
+            // TacGia
             // 
-            this.DonViTinh.DataPropertyName = "DonViTinh";
-            this.DonViTinh.FillWeight = 15F;
-            this.DonViTinh.HeaderText = "Đơn vị tính";
-            this.DonViTinh.Name = "DonViTinh";
-            this.DonViTinh.ReadOnly = true;
+            this.TacGia.DataPropertyName = "TacGia";
+            this.TacGia.FillWeight = 25F;
+            this.TacGia.HeaderText = "Tác giả";
+            this.TacGia.Name = "TacGia";
+            this.TacGia.ReadOnly = true;
             // 
-            // GhiChu
+            // NXB
             // 
-            this.GhiChu.DataPropertyName = "GhiChu";
-            this.GhiChu.FillWeight = 30F;
-            this.GhiChu.HeaderText = "Ghi chú";
-            this.GhiChu.Name = "GhiChu";
-            this.GhiChu.ReadOnly = true;
+            this.NXB.DataPropertyName = "NXB";
+            this.NXB.FillWeight = 30F;
+            this.NXB.HeaderText = "Nhà xuất bản";
+            this.NXB.Name = "NXB";
+            this.NXB.ReadOnly = true;
             // 
-            // panelTimKiem
+            // SoLuong
             // 
-            this.panelTimKiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelTimKiem.Controls.Add(this.btnTimKiem);
-            this.panelTimKiem.Controls.Add(this.txtTimKiem);
-            this.panelTimKiem.Controls.Add(this.label1);
-            this.panelTimKiem.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTimKiem.Location = new System.Drawing.Point(0, 0);
-            this.panelTimKiem.Name = "panelTimKiem";
-            this.panelTimKiem.Size = new System.Drawing.Size(1134, 54);
-            this.panelTimKiem.TabIndex = 0;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 229);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 16);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Số lượng : ";
-            // 
-            // txtSoLuong
-            // 
-            this.txtSoLuong.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoLuong.Location = new System.Drawing.Point(109, 226);
-            this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(108, 23);
-            this.txtSoLuong.TabIndex = 16;
+            this.SoLuong.DataPropertyName = "SoLuong";
+            this.SoLuong.FillWeight = 15F;
+            this.SoLuong.HeaderText = "Số lượng";
+            this.SoLuong.Name = "SoLuong";
+            this.SoLuong.ReadOnly = true;
             // 
             // FrmQuanLyDauSach
             // 
@@ -423,12 +433,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNXB;
         private System.Windows.Forms.TextBox txtTacGia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenMH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DonViTinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
         private System.Windows.Forms.TextBox txtSoLuong;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenSach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TacGia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NXB;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
     }
 }

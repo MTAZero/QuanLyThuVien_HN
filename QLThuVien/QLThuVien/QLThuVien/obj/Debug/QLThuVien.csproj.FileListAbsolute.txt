@@ -16,3 +16,20 @@ E:\Work\2017\Làm hộ Hòa Ngô\QLThuVien\QLThuVien\QLThuVien\bin\Debug\EntityF
 E:\Work\2017\Làm hộ Hòa Ngô\QLThuVien\QLThuVien\QLThuVien\bin\Debug\EntityFramework.SqlServer.xml
 E:\Work\2017\Làm hộ Hòa Ngô\QLThuVien\QLThuVien\QLThuVien\obj\Debug\QLBanHang.exe
 E:\Work\2017\Làm hộ Hòa Ngô\QLThuVien\QLThuVien\QLThuVien\obj\Debug\QLBanHang.pdb
+E:\GitHub\QuanLyThuVien_HN\QLThuVien\QLThuVien\QLThuVien\bin\Debug\QLBanHang.exe.config
+E:\GitHub\QuanLyThuVien_HN\QLThuVien\QLThuVien\QLThuVien\obj\Debug\QLBanHang.exe
+E:\GitHub\QuanLyThuVien_HN\QLThuVien\QLThuVien\QLThuVien\obj\Debug\QLBanHang.pdb
+E:\GitHub\QuanLyThuVien_HN\QLThuVien\QLThuVien\QLThuVien\bin\Debug\QLBanHang.exe
+E:\GitHub\QuanLyThuVien_HN\QLThuVien\QLThuVien\QLThuVien\bin\Debug\QLBanHang.pdb
+E:\GitHub\QuanLyThuVien_HN\QLThuVien\QLThuVien\QLThuVien\bin\Debug\EntityFramework.dll
+E:\GitHub\QuanLyThuVien_HN\QLThuVien\QLThuVien\QLThuVien\bin\Debug\EntityFramework.SqlServer.dll
+E:\GitHub\QuanLyThuVien_HN\QLThuVien\QLThuVien\QLThuVien\bin\Debug\EntityFramework.xml
+E:\GitHub\QuanLyThuVien_HN\QLThuVien\QLThuVien\QLThuVien\bin\Debug\EntityFramework.SqlServer.xml
+E:\GitHub\QuanLyThuVien_HN\QLThuVien\QLThuVien\QLThuVien\obj\Debug\QLThuVien.csprojResolveAssemblyReference.cache
+E:\GitHub\QuanLyThuVien_HN\QLThuVien\QLThuVien\QLThuVien\obj\Debug\QLThuVien.GUI.FrmDoiMatKhau.resources
+E:\GitHub\QuanLyThuVien_HN\QLThuVien\QLThuVien\QLThuVien\obj\Debug\QLThuVien.GUI.FrmLogin.resources
+E:\GitHub\QuanLyThuVien_HN\QLThuVien\QLThuVien\QLThuVien\obj\Debug\QLThuVien.GUI.FrmMain.resources
+E:\GitHub\QuanLyThuVien_HN\QLThuVien\QLThuVien\QLThuVien\obj\Debug\QLThuVien.GUI.FrmQuanLyDauSach.resources
+E:\GitHub\QuanLyThuVien_HN\QLThuVien\QLThuVien\QLThuVien\obj\Debug\QLThuVien.GUI.FrmQuanLyNhanVien.resources
+E:\GitHub\QuanLyThuVien_HN\QLThuVien\QLThuVien\QLThuVien\obj\Debug\QLBanHang.Properties.Resources.resources
+E:\GitHub\QuanLyThuVien_HN\QLThuVien\QLThuVien\QLThuVien\obj\Debug\QLThuVien.csproj.GenerateResource.Cache
